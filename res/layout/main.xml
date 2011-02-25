@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <LinearLayout android:id="@+id/rootView"
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TableLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:text="Current Activity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold" android:layout_marginRight="10sp"
+                    android:layout_span="2" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Unique ID:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/activityId"
+                    android:text="[activityId]" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Got Activity result:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/activityResult"
+                    android:text="-" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <View android:layout_width="fill_parent"
+                android:layout_height="2dip" android:background="#FFFFFF"
+                android:layout_span="2" android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+
+            <TableRow>
+                <TextView android:text="Current Task"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold" android:layout_span="2" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/textTaskDescription"
+                    android:text="Description:" android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/taskDescription"
+                    android:text="[taskDescription]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:id="@+id/textTaskState"
+                    android:text="State:" android:textStyle="italic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp" />
+                <ImageView android:id="@+id/taskState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Activities total:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/taskNumActivities"
+                    android:text="[taskNumActivities]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Activities running:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/taskNumRunning"
+                    android:text="[taskNumRunning]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Top:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/taskTopActivity"
+                    android:text="[taskTopActivity]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Bottom:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp" />
+                <TextView android:id="@+id/taskBaseActivity"
+                    android:text="[taskBaseActivity]"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+
+        <View android:layout_width="fill_parent"
+            android:layout_height="2dip" android:background="#FFFFFF"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+
+        <LinearLayout android:id="@+id/sentFlagsContainer"
+            android:orientation="vertical" android:visibility="gone"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="Flags sent from previous Activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:textStyle="bold" />
+            <TextView android:id="@+id/sentFlags"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:textStyle="italic" />
+            <View android:layout_width="fill_parent"
+                android:layout_height="2dip" android:background="#FFFFFF"
+                android:layout_span="2" android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="Current Flags"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:textStyle="bold" />
+            <TextView android:id="@+id/currentFlags"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:textStyle="italic" />
+        </LinearLayout>
+
+        <View android:layout_width="fill_parent"
+            android:layout_height="2dip" android:background="#FFFFFF"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView android:text="Launch internal Activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button android:id="@+id/buttonStartActivity1"
+                    android:text="Activity1" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/buttonStartActivity2"
+                    android:text="Activity2" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/buttonStartActivity3"
+                    android:text="Activity3" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView android:text="Launch internal Activity for result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button android:id="@+id/buttonStartActivity4"
+                    android:text="Activity4" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/buttonStartActivity5"
+                    android:text="Activity5" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/buttonStartActivity6"
+                    android:text="Activity6" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView android:text="Launch external Activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:layout_marginBottom="5dp" />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button android:id="@+id/buttonStartActivity7"
+                    android:text="Activity7" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/buttonStartActivity8"
+                    android:text="Activity8" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+                <Button android:id="@+id/buttonStartActivity9"
+                    android:text="Activity9" android:layout_width="85dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View android:layout_width="fill_parent"
+            android:layout_height="2dip" android:background="#FFFFFF"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp" />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <Button android:id="@+id/buttonReturn" android:text="Return"
+                android:layout_width="120dp" android:layout_height="wrap_content" />
+            <Button android:id="@+id/buttonReturnResult"
+                android:text="Return result" android:layout_width="120dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
