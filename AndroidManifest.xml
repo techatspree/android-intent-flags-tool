@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.akquinet.android.tools.intentflagsv1"
+    package="de.akquinet.android.tools.intentflags"
     android:versionCode="1" android:versionName="1.0">
     <application android:icon="@drawable/icon"
         android:label="@string/app_name" android:debuggable="true">
@@ -12,15 +12,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="Activity1" />
-        <activity android:name="Activity2" />
-        <activity android:name="Activity3" />
-        <activity android:name="Activity4" />
-        <activity android:name="Activity5" />
-        <activity android:name="Activity6" />
-        <activity android:name="Activity7" />
-        <activity android:name="Activity8" />
-        <activity android:name="Activity9" />
+        <activity android:name=".Activity1" />
+        <activity android:name=".Activity2" />
+        <activity android:name=".Activity3" />
+        <activity android:name=".Activity4" />
+        <activity android:name=".Activity5" />
+        <activity android:name=".Activity6" />
+        <activity android:name=".Activity7" />
+        <activity android:name=".Activity8" />
+        <activity android:name=".Activity9" />
     </application>
 
     <uses-sdk android:minSdkVersion="5" />

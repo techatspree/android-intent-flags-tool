@@ -1,4 +1,4 @@
-package de.akquinet.android.tools.intentflagsv1;
+package de.akquinet.android.tools.intentflags;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,8 +21,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import de.akquinet.android.tools.intentflagsv1.util.FlagUtil;
-import de.akquinet.android.tools.intentflagsv1.util.ToastUtil;
+import de.akquinet.android.tools.intentflags.util.FlagUtil;
+import de.akquinet.android.tools.intentflags.util.ToastUtil;
 
 
 public abstract class BaseActivity extends Activity
@@ -161,7 +161,7 @@ public abstract class BaseActivity extends Activity
             @Override
             protected Void doInBackground(Void... params) {
                 try {
-                    Thread.sleep(300);
+                    Thread.sleep(500);
                 }
                 catch (InterruptedException e) {
                 }

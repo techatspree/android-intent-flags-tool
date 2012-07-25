@@ -1,4 +1,4 @@
-package de.akquinet.android.tools.intentflagsv1.util;
+package de.akquinet.android.tools.intentflags.util;
 
 import android.content.Context;
 import android.graphics.Color;

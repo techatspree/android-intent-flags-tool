@@ -1,4 +1,4 @@
-package de.akquinet.android.tools.intentflagsv1;
+package de.akquinet.android.tools.intentflags;
 
 public class Activity1 extends BaseActivity
 {
